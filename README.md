@@ -19,3 +19,22 @@ based on the header and prints this and several other pieces of information out 
 <img src = "results.GIF">
 
 <h2>Looking forward</h2>
+
+As you can see, the program only covers about 20 headers.  In the near future I plan to add functionality for more headers (taken from
+<a href="https://en.wikipedia.org/wiki/List_of_file_signatures">here</a>.)
+
+I will also add functionality to iterate through subdirectories as well.
+
+<h2>Running header.py</h2>
+
+Running header.py is rather simple as it currently runs from the command prompt.  Cd into the correct directory then run 
+
+Windows:
+python header.py
+
+Mac and Linux:
+python3 header.py
+
+Give it a directory name when it asks and it will do the rest.  Then open up the .csv and view your results.
+
+<img src="run.png">
