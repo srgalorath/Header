@@ -3,7 +3,8 @@ import os.path
 import time
 import csv
 
-filepath = input("What file would you like to examine?\n")
+filepath = input("What directory would you like to examine?\n")
+csv_path = input("What would you like to call the csv?")
 try:
     files = os.listdir(filepath)
 except:
@@ -117,8 +118,9 @@ try:
 except:
     print("File not found.")
     exit()
-#print(file_data)
-with open("test.csv", 'w', newline='') as f:
+
+#Edit this to allow them to name the csv
+with open(csv_path + ".csv", 'w', newline='') as f:
     thewriter = csv.writer(f)
     for s in file_list:
         thewriter.writerow(s)
