@@ -10,4 +10,12 @@ something else.
 
 <h2>How it works</h2>
 
+This program iterates through a directory of files and checks the extensions.  It converts the file to hex and then pulls of the
+first few hex characters.  The number of characters pulled out is based on the first four characters of the string as each extension
+a unique beginning.  It then checks this header against a list of headers to see if the header meatches the extension given.  If it does
+not, then the message is set to "Warning: file extension does not match.".  The program then checks to see what the file type actuall is 
+based on the header and prints this and several other pieces of information out to a .csv.  The results will look something like this:
+
+<img src = "results.GIF">
+
 <h2>Looking forward</h2>
